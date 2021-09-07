@@ -1,0 +1,61 @@
+#app {
+  /* Start here! */
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.home-main {
+  margin: 50px;
+}
+
+.search-comp {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 320px;
+  height: 40px;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.search-input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) and (min-width: 320px) {
+  td,
+  th {
+    padding: 6px;
+  }
+  table {
+    font-size: 14px;
+    overflow: auto;
+  }
+  .home-main {
+    margin: 16px;
+  }
+  .search-input {
+    margin-top: 30px;
+  }
+  .table-main {
+    overflow-x: auto;
+  }
+}
